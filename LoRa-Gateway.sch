@@ -1136,4 +1136,53 @@ Wire Wire Line
 	1775 5675 1775 5725
 Text Notes 4850 7625 0    50   ~ 0
 Vout = 3V3:\n220k / 68k -> 3.312V\n1M / 309k -> 3.313V\n270k / 82k -> 3,357V
+Text Label 4750 2050 0    50   ~ 0
+SCL
+Text Label 4750 1950 0    50   ~ 0
+SDA
+$Comp
+L Connector:Conn_01x04 J2
+U 1 1 5D7872AF
+P 5350 4625
+F 0 "J2" H 5268 4200 50  0000 C CNN
+F 1 "Conn_01x04" H 5268 4291 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5350 4625 50  0001 C CNN
+F 3 "~" H 5350 4625 50  0001 C CNN
+	1    5350 4625
+	-1   0    0    1   
+$EndComp
+Text Label 5550 4425 0    50   ~ 0
+SCL
+Text Label 5550 4525 0    50   ~ 0
+SDA
+$Comp
+L power:GND #PWR0135
+U 1 1 5D7887A4
+P 5600 4775
+F 0 "#PWR0135" H 5600 4525 50  0001 C CNN
+F 1 "GND" H 5605 4602 50  0000 C CNN
+F 2 "" H 5600 4775 50  0001 C CNN
+F 3 "" H 5600 4775 50  0001 C CNN
+	1    5600 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0136
+U 1 1 5D7887AE
+P 5750 4600
+F 0 "#PWR0136" H 5750 4450 50  0001 C CNN
+F 1 "+3V3" H 5765 4773 50  0000 C CNN
+F 2 "" H 5750 4600 50  0001 C CNN
+F 3 "" H 5750 4600 50  0001 C CNN
+	1    5750 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4625 5750 4625
+Wire Wire Line
+	5750 4625 5750 4600
+Wire Wire Line
+	5550 4725 5600 4725
+Wire Wire Line
+	5600 4725 5600 4775
 $EndSCHEMATC
